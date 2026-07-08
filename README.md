@@ -126,6 +126,23 @@ Build the following routes:
 
 ---
 
+## Implementation Notes
+
+The Flask app in `server/app.py` exposes two routes:
+
+- `/` returns a welcome message: `Welcome to Flatiron Cars`
+- `/<model>` checks the requested model name against the `existing_models` list
+  - If the model exists, the app returns `Flatiron {model} is in our fleet!`
+  - If the model does not exist, the app returns `No models called {model} exists in our catalog`
+
+## Demo Screenshot
+
+Below is a screenshot of the application structure and an example response for `GET /Crossroads`.
+
+![Flatiron Cars Routes](screenshot.png)
+
+---
+
 ## Task 4: Document and Maintain
 
 ### Best Practices:
